@@ -11,7 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.example.pertemuan3.R
 
 @Composable
 fun TataLetakCloumn(modifier: Modifier) {
@@ -89,5 +91,5 @@ fun TataLetakRowCOlumn(modifier: Modifier) {
 
 @Composable
 fun TataLetakBoxColumnRow(modifier: Modifier) {
-
+    val gambar = painterResource(id = R.drawable.notasibalok)
 }
