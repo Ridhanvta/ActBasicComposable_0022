@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun TataLetakColoumn(modifier: Modifier) {
+fun TataLetakCloumn(modifier: Modifier) {
     Column(modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)) {
         Text(text = "Komponen1")
         Text(text = "Komponen2")
@@ -46,5 +46,25 @@ fun TataLetakBox(modifier: Modifier){
         Text(text = "Row 1")
         Text(text = "Box 2")
         Text(text = "Column 2")
+    }
+}
+
+@Composable
+fun TataLetakColumnRow(modifier: Modifier) {
+    Column() {
+        //Baris1
+        Row(modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly) {
+            Text(text = "Komponen1Baris1")
+            Text(text = "Komponen2Baris1")
+            Text(text = "Komponen3Baris1")
+        }
+        //Baris2
+        Row(modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly) {
+            Text(text = "Komponen1Baris2")
+            Text(text = "Komponen2Baris2")
+            Text(text = "Komponen3Baris2")
+        }
     }
 }
