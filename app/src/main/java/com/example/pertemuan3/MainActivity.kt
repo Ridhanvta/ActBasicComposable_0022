@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.pertemuan3.ui.theme.HalamanLoginUMY
 import com.example.pertemuan3.ui.theme.Pertemuan3Theme
 import com.example.pertemuan3.ui.theme.TataletakBoxColumnRow
 
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pertemuan3Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TataletakBoxColumnRow(
+                    HalamanLoginUMY(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
